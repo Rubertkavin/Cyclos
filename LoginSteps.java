@@ -27,9 +27,6 @@ public class LoginSteps {
 	@When("I enter {string} as username and {string} as password")
 	public void i_enter_as_username_and_as_password(String username, String password) {
 
-		// driver.findElement(By.xpath("//input[@class='form-control ng-pristine
-		// ng-valid ng-touched']"))
-		// .click();
 		driver.findElement(By.xpath("//input[@type=\"text\"]")).sendKeys("demo");
 
 		driver.findElement(By.xpath("//input[@type=\"password\"]")).sendKeys("1234");
